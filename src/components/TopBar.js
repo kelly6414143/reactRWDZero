@@ -79,7 +79,7 @@ const TopBar = ({ styles }) => {
       marginRight: 10,
       cursor: "pointer"
     },
-    burgerLine:{
+    burgerLine: {
       position: 'absolute',
       top: '50%',
       left: '50%',
@@ -89,13 +89,13 @@ const TopBar = ({ styles }) => {
       transition: "background-color .3s ease-in-out, transform .3s ease-in-out",
       borderradius: "3px"
     },
-    burgerTop:{
+    burgerTop: {
       transform: "translate(-50%,-7px)"
     },
-    burgerMid:{
+    burgerMid: {
       transform: "translate(-50%,0px)"
     },
-    burgerBottom:{
+    burgerBottom: {
       transform: "translate(-50%,7px)",
       // transition: background-color .3s ease-in-out, transform .3s ease-in-out;
     },
@@ -154,16 +154,16 @@ const TopBar = ({ styles }) => {
           </div>
         </div>
         <div style={topBarStyle.burgerWrapper}>
-          <div style={{...topBarStyle.burgerLine,...topBarStyle.burgerTop}}></div>
-          <div style={{...topBarStyle.burgerMid,...topBarStyle.burgerLine}}></div>
-          <div style={{...topBarStyle.burgerBottom, ...topBarStyle.burgerLine}}></div>
+          <div style={{ ...topBarStyle.burgerLine, ...topBarStyle.burgerTop }}></div>
+          <div style={{ ...topBarStyle.burgerMid, ...topBarStyle.burgerLine }}></div>
+          <div style={{ ...topBarStyle.burgerBottom, ...topBarStyle.burgerLine }}></div>
         </div>
       </div>
       <div style={topBarStyle.downWragpper}>
         {
-          menus.map(el => {
+          menus.map((el, index) => {
             return (
-              <div style={topBarStyle.menuItems} class="menuItem">{el.text}</div>
+              <div key={index} style={topBarStyle.menuItems} class="menuItem">{el.text}</div>
             )
           })
         }

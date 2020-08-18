@@ -56,10 +56,6 @@ class App extends Component {
       imgWrapperWH: windowWidth > 900 ? 26 : 40,
       readBarChangeDirection: windowWidth < 600,
       shoppingChangeDirection: windowWidth < 1146
-      // showFooterMenuText: windowWidth > 500,
-      // showSidebar: windowWidth > 768,
-      // sidebarWidth: windowWidth < 1100 ? 50 : 200,
-      // sidebarCollapsed: windowWidth < 1100
     };
 
     // const menuItems = styles.showSidebar
@@ -96,7 +92,7 @@ class App extends Component {
         <div style={{ height: styles.topBarBlankHeight }}></div>
         <ReadBar styles={styles} />
 
-        <Content styles={styles} />
+        <Content styles={styles} {...this.state} />
 
         {/* {!styles.showSidebar && (
           <FooterMenu menuItems={menuItems} styles={styles} />

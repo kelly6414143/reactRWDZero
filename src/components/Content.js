@@ -1,9 +1,8 @@
 import React from "react";
 import Shopping from './Shopping'
 
-const Content = ({ styles }) => {
+const Content = ({ styles, windowWidth }) => {
   const { showSidebar } = styles;
-
   // const dummyPost = {
   //   title: `Here's a blog post title`,
   //   summary:
@@ -13,6 +12,7 @@ const Content = ({ styles }) => {
   // const posts = Array(20).fill(dummyPost);
 
   const contentStyle = {
+    overflow: "hidden"
     // paddingTop: showSidebar ? 20 : styles.topBarHeight + 20,
     // paddingRight: 20,
     // paddingBottom: showSidebar ? 20 : styles.footerMenuHeight + 20,
@@ -21,7 +21,7 @@ const Content = ({ styles }) => {
 
   return (
     <div style={contentStyle}>
-      <Shopping styles={styles}/>
+      <Shopping styles={styles} windowWidth={windowWidth} />
     </div>
   );
 };
