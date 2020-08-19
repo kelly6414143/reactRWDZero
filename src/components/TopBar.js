@@ -7,7 +7,7 @@ const TopBar = ({ styles }) => {
     width: "100%",
     padding: styles.showBarDown ? "0 30px" : "0 10px",
     backgroundColor: styles.white,
-
+    zIndex: 999,
     upperWragpper: {
       borderBottom: "1px solid #d8d8d8",
       height: styles.topBarUpperHeight,

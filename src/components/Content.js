@@ -1,5 +1,6 @@
 import React from "react";
 import Shopping from './Shopping'
+import PlasticgNoGo from './PlasticgNoGo'
 
 const Content = ({ styles, windowWidth }) => {
   const { showSidebar } = styles;
@@ -22,6 +23,7 @@ const Content = ({ styles, windowWidth }) => {
   return (
     <div style={contentStyle}>
       <Shopping styles={styles} windowWidth={windowWidth} />
+      <PlasticgNoGo styles={styles} windowWidth={windowWidth} />
     </div>
   );
 };

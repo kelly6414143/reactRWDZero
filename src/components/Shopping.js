@@ -6,8 +6,10 @@ import BananaImg from '../assests/images/asset 7.png';
 
 const Shopping = ({ styles, windowWidth }) => {
     const ShoppingStyle = {
+        maxWidth: '1320px',
         display: "flex",
         padding: "0 20px",
+        margin: "0px auto 165px",
         paddingTop: styles.shoppingChangeDirection ? "40px" : "105px",
         flexDirection: styles.shoppingChangeDirection ? "column" : "row",
         alignItems: styles.shoppingChangeDirection ? "center" : null,
