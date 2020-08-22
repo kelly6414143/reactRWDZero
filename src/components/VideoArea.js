@@ -83,7 +83,7 @@ const VideoArea = ({ styles, windowWidth }) => {
 
     return (
         <>
-            <div style={VideoAreaStyle} class="PlasticgNoGoStyle">
+            <div style={VideoAreaStyle} class="VideoAreaStyle">
                 <div >
                     <video style={VideoAreaStyle.videoWrapper} autoplay="true" loop="true"><source src="https://storage.googleapis.com/zeroshop-cdn/site/videos/journey.mov" type="video/mp4" /></video>
                 </div>
