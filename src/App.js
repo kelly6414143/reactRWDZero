@@ -55,7 +55,8 @@ class App extends Component {
       imgWH: windowWidth > 900 ? 16 : 20,
       imgWrapperWH: windowWidth > 900 ? 26 : 40,
       readBarChangeDirection: windowWidth < 600,
-      shoppingChangeDirection: windowWidth < 1146
+      shoppingChangeDirection: windowWidth < 1146,
+      plasticgNoGoChangeDirection: windowWidth < 1250
     };
 
     // const menuItems = styles.showSidebar

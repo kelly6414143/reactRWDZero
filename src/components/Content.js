@@ -1,6 +1,7 @@
 import React from "react";
-import Shopping from './Shopping'
-import PlasticgNoGo from './PlasticgNoGo'
+import Shopping from './Shopping';
+import PlasticgNoGo from './PlasticgNoGo';
+import VideoArea from './VideoArea'
 
 const Content = ({ styles, windowWidth }) => {
   const { showSidebar } = styles;
@@ -24,6 +25,7 @@ const Content = ({ styles, windowWidth }) => {
     <div style={contentStyle}>
       <Shopping styles={styles} windowWidth={windowWidth} />
       <PlasticgNoGo styles={styles} windowWidth={windowWidth} />
+      <VideoArea style={styles}/>
     </div>
   );
 };
