@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kelly6414143/reactRWDZero/precache-manifest.435dfda56991cbb71032bdd428eceb9f.js"
+  "/reactRWDZero/precache-manifest.a66e5641e255598c59ed0285c4becb09.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/kelly6414143/reactRWDZero/index.html", {
+workbox.routing.registerNavigationRoute("/reactRWDZero/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
